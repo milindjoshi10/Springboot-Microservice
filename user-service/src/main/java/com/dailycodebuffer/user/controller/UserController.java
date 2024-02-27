@@ -24,7 +24,11 @@ public class UserController {
         return userService.saveUser(user);
     }
 
-
+    @PostMapping("/")
+    public User saveUserNew(@RequestBody User user) {
+        log.info("4:32 Milind added his first commit-saveUserNew in his own Milind Brnach");
+        return userService.saveUser(user);
+    }
 
 
 }
